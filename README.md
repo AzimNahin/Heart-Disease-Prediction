@@ -89,7 +89,26 @@ In the voting approach, predictions from each model are combined, and the final 
 The primary performance metric for evaluating the models is **accuracy**, which is the proportion of correctly predicted instances out of the total instances. This metric is particularly suitable for binary classification tasks.
 
 ## Results
-The following visualizations summarize the performance of individual models, ensemble techniques, and comparison between initial and tuned models.
+The following tables and visualizations summarize the results of individual models and ensemble techniques.
+
+### Individual Model Performance (Accuracy and AUC)
+| Model                   | Accuracy | AUC Score |
+|-------------------------|----------|-----------|
+| Random Forest           | 0.8361   | 0.9321    |
+| Gradient Boosting       | 0.8361   | 0.8933    |
+| XGBoost                 | 0.8033   | 0.9084    |
+| Logistic Regression     | 0.8033   | 0.9052    |
+| Neural Network (MLP)    | 0.8571   | 0.8750    |
+| Decision Tree           | 0.7869   | 0.8184    |
+| K-Nearest Neighbors     | 0.6557   | 0.6891    |
+| SVM (RBF Kernel)        | 0.6393   | 0.4397    |
+
+### Ensemble Model Performance
+| Ensemble Model          | Accuracy | AUC Score |
+|-------------------------|----------|-----------|
+| Stacking Model          | 0.8333   | 0.9074    |
+| ML-HDPM Model           | 0.8333   | 0.9083    |
+
 
 ### Individual Model Performance (Accuracy and AUC)
 1. **Best Model Accuracy After Hyperparameter Tuning**:
